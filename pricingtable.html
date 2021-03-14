@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOiJ Pricing</title>
+  <link rel="icon" href="icons/doij_logo.png" type="image/png" sizes="16x16">
+</head>
+
+ <div class="bg_move">
+      <h1 class="topCENTER">DOiJ Pricing</h1>
+    </div>
+
+  <div class="pricing-table">
+    <div class="pricing-card">
+      <h3 class="pricing-card-header">DOiJ Floater</h3>
+      <div class="price"><sup>$</sup>50</div>
+      <ul>
+        <li>Allows you to <strong>switch</strong> departments at any time.</li>
+      </ul>
+      <a href="/pricetables/floater.html" class="order-btn">Purchase</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3 class="pricing-card-header">DOiJ V.I.P</h3>
+      <div class="price"><sup>$</sup>50</div>
+      <ul>
+        <li>Allows you to own <strong>any weapon</strong> at any rank if you can afford it.</li>
+        <li>Allows you to <strong>pursuit</strong> in bikes and boats at any rank.</li>
+        <li>Allows you to drive <strong>super cars</strong> at any rank.</li>
+      </ul>
+      <a href="/pricetables/vip.html" class="order-btn">Purchase</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3 class="pricing-card-header">DOiJ All Access Pass</h3>
+      <div class="price"><sup>$</sup>75</div>
+      <ul>
+        <li>Allows you to have your own <strong>custom lounge</strong>.</li>
+        <li>Allows the <strong>Unbelievaboat music bot</strong> to join your lounge at any time.</li>
+      </ul>
+      <a href="pricetables/allaccess.html" class="order-btn">Purchase</a>
+    </div>
+
+    <div class="pricing-card">
+      <h3 class="pricing-card-header">Server Investor</h3>
+      <div class="price"><sup>$</sup>200</div>
+      <ul>
+        <li>Gain access to the <strong>Investor Lounge</strong> at any time.</li>
+        <li>Have the <strong>priority speaker</strong> permission which makes you a priority speaker in VCs.</li>
+      </ul>
+      <a href="/pricetables/investor.html" class="order-btn">Purchase</a>
+    </div>
+  </div>
+
+<div id="acceptPopup" class="popup popup-green bottom right">
+  <h5>Transporting you now...</h5>
+</div>
+<div class="btn_wrapper">
+  <button class="btn btn-green accept">Home</button>
+</div>
+
+</body>
+</html>
+<style>
+body, html {
+  background-color: #252a34;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn_wrapper {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.btn {
+  background-color: #252a34;
+  border: 0;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 900;
+  height: 50px;
+  overflow: hidden;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: 200px;
+}
+
+.btn-green {
+   border: 2px solid #47b2cf;
+}
+
+.btn-green:hover {
+  background-color: #2d5a66;
+}
+
+.btn-red {
+  border: 2px solid #ff3c41;
+}
+
+.btn-red:hover {
+  background-color: #633d3d;
+}
+
+.popup {
+  align-items: center;
+  background-color: #252a34;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 rgb(0 0 0 / 20%), 0 3px 3px -2px rgb(0 0 0 / 14%), 0 1px 8px 0 rgb(0 0 0 / 12%);
+  color: #fff;
+  display: flex;
+  font-size: 1.4rem;
+  height: 100px;
+  justify-content: center;
+  margin: 25px;
+  position: fixed;
+  right: -400px;
+  text-align: center;
+  width: 300px;
+}
+
+.popup:hover {
+  right: 0;
+}
+
+
+
+.popup-green {
+  background-color: #2d5a66;
+  border: 2px solid #47b2cf;
+}
+
+.popup-red {
+  background-color: #633d3d;
+  border: 2px solid #ff3c41;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.slide-in {
+  -webkit-animation: slide-in 0.5s forwards;
+  animation: slide-in 0.5s forwards;
+}
+
+@-webkit-keyframes slide-in {
+    100% { right: 0; }
+}
+
+@keyframes slide-in {
+    100% { right: 0; }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+topCENTER {
+  top: 50px;
+  position: absolute;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+.bg_move {
+  top:3.5%;
+  text-decoration: underline;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: repeating-radial-gradient(circle at 100% 100%, rgba(255, 190, 11, 0.5) 4%, rgba(255, 190, 11, 0.5) 8%, rgba(251, 86, 7, 0.5) 8%, rgba(251, 86, 7, 0.5) 12%, rgba(255, 0, 110, 0.5) 12%, rgba(255, 0, 110, 0.5) 16%, rgba(131, 56, 236, 0.5) 16%, rgba(131, 56, 236, 0.8) 20%, rgba(58, 134, 255, 0.5) 20%, rgba(58, 134, 255, 0.5) 24%), repeating-radial-gradient(circle at 0% 100%, rgba(255, 190, 11, 0.7) 4%, rgba(255, 190, 11, 0.9) 8%, rgba(251, 86, 7, 0.7) 8%, rgba(251, 86, 7, 0.9) 12%, rgba(255, 0, 110, 0.7) 12%, rgba(255, 0, 110, 0.9) 16%, rgba(131, 56, 236, 0.8) 16%, rgba(131, 56, 236, 0.8) 20%, rgba(58, 134, 255, 0.8) 20%, rgba(58, 134, 255, 0.8) 24%);
+  background-size: 250px 250px;
+  background-position: 0 0;
+  -webkit-animation: stripes 3s linear infinite;
+          animation: stripes 3s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bg_move h1 {
+  font-size: 6rem;
+  font-family: sans-serif;
+}
+
+.bg_move i {
+  font-size: 8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 250px 0, 250px 0, 100px 0;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 250px 0, 250px 0, 100px 0;
+  }
+}
+strong {
+  font-weight: bold;
+  text-decoration: underline;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans",sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #30336b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card{
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: .3s linear;
+}
+
+.pricing-card-header{
+  background-color: #0fbcf9;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #0fbcf9;
+}
+
+.price{
+  font-size: 70px;
+  color: #0fbcf9;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+}
+
+.pricing-card li{
+  font-size: 16px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #0fbcf9;
+  color: #0fbcf9;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn:hover{
+  background-color: #0fbcf9;
+  color: #fff;
+}
+
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  let btns = document.querySelectorAll('.btn')
+  let popups = document.querySelectorAll('.popup')
+  let acceptBtns = document.querySelectorAll('.btn.accept')
+  let cancelBtns = document.querySelectorAll('.btn.cancel')
+  let acceptPopup = document.getElementById('acceptPopup')
+  let cancelPopup = document.getElementById('cancelPopup')
+  let timer = null
+  document.addEventListener('click', function(evt) {
+    let target = evt.target
+    let exclusions = ['btn', 'popup']
+    let match = false
+    for (const c of target.classList) {
+      if (exclusions.includes(c)) {
+        match = true
+      }
+    }
+    if (!match) {
+      closePopup()
+    }
+  })
+  acceptBtns.forEach(b => {
+    b.addEventListener('click', () => {
+      openPopup(b, acceptPopup)
+    })
+  })
+  cancelBtns.forEach(b => {
+    b.addEventListener('click', () => {
+      openPopup(b, cancelPopup)
+    })
+  })
+  function openPopup(btn, popup) {
+    btn.disabled = true
+    popup.style.transition = 'right 0.5s linear 0s'
+    popup.style.right = '0'
+    popup.classList.add('popup-open')
+    timer = setTimeout(closePopup, 2000)
+  }
+  function closePopup() {
+    popups.forEach(el => {
+      if (el.classList.contains('popup-open')) {
+        el.style.transition = 'right 1s linear 0s'
+        el.style.right = '-400px'
+        el.classList.remove('popup-open')
+      }
+    })
+    setTimeout(function() {
+      btns.forEach(b => b.disabled = false)
+    }, 1000)
+    location.replace("/index.html");
+  }
+})
+</script>
